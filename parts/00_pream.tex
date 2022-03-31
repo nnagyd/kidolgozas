@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{t1enc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{nicefrac}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{pdflscape}
+\usepackage{csquotes}
+
+
+\geometry{
+a4paper,
+total={170mm,240mm},
+left=20mm,
+top=30mm,
+}
+
+\pagestyle{empty}
+\date{}
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\rhead{\Course}
+\chead{\textbf{\Large \Title}}
+\lhead{\Date }
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+
+\renewcommand{\d}[1]{\mathrm{d}#1}
+
+\sisetup{exponent-product = \cdot,
+         output-product = \cdot,
+         per-mode=fraction}
+
+
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+
+\addbibresource{parts/literature.bib}
+
+\newcommand{\specialcell}[2][c]{\begin{tabular}[#1]{c}#2\end{tabular}}
